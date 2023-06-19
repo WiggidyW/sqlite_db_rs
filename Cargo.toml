@@ -1,0 +1,11 @@
+[package]
+name = "sqlite"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+env_util = { git = "https://github.com/WiggidyW/env_util_rs.git" }
+sqlx = { version = "0.6", features = ["sqlite", "runtime-tokio-native-tls"] }
+futures = { version = "0.3" }
